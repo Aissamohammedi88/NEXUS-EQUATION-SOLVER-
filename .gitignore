@@ -35,3 +35,34 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+---
+
+### 2. Le fichier `.gitignore`
+
+Ce fichier est crucial pour éviter d'envoyer tes rapports personnels et les fichiers temporaires sur GitHub.
+
+```gitignore
+# ═══════════════════════════════════════════════════════════════════════════
+# NEXUS GITIGNORE - Ignore les données générées et les fichiers système
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Ignorer le dossier des rapports (données sensibles/locales)
+# Le script crée les rapports dans ~/Documents/nexus_equation/reports
+# Si tu déplaces le dossier reports dans le dossier du projet :
+reports/
+*.json
+
+# Fichiers temporaires et logs
+*.log
+*.tmp
+*.bak
+
+# Fichiers système OS
+.DS_Store
+Thumbs.db
+
+# Environnements virtuels ou dossiers de config locale
+.env
+.vscode/
+.idea/
